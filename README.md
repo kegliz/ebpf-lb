@@ -13,7 +13,8 @@ Setup guides:
 
 ## Installations steps for Mac with Apple Silicon chip
 ### Initial setup
-I used VMware Fusion to run Ubuntu 22.04 with OpenSSH on my M1 Mac. After setting up ssh I used a simple terminal to ssh into it and install the following:
+Install VMware Fusion on your M1 Mac. You can download it from [VMware Fusion](https://www.vmware.com/products/fusion/fusion-evaluation.html).
+Set up an [Ubuntu 22.04](https://cdimage.ubuntu.com/releases/22.04.4/release/) virtual machine within VMware Fusion. Ensure you configure the VM with OpenSSH. Once Ubuntu is installed, set up your SSH keys for secure access. Then use a terminal on your Mac to SSH into your new Ubuntu VM and install the following softwares:
 - [Go](https://go.dev/wiki/Ubuntu) 
 - [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - clang and llvm
