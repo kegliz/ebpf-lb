@@ -41,7 +41,7 @@ sudo apt install linux-tools-common linux-tools-generic iproute2
 ### Clone the repo and initialize it
 ```bash
 git clone https://github.com/kegliz/ebpf-lb.git
-cd lb
+cd ebpf-lb
 go get github.com/cilium/ebpf/cmd/bpf2go 
 ```
 
