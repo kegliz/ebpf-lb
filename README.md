@@ -8,7 +8,8 @@ Do not use this in production. This is a learning project and it's not optimized
 
 Setup guides:
 - [Installations steps for Mac with Apple Silicon chip](#installations-steps-for-mac-with-apple-silicon-chip)
-- [Installations steps for x86_64 Ubuntu 22.04](#installations-steps-for-x86_64-ubuntu-2204)
+- [Installations steps for Ubuntu 22.04 (AMD64)](#installations-steps-for-ubuntu-2204-amd64)
+
 
 
 ## Installations steps for Mac with Apple Silicon chip
@@ -111,6 +112,6 @@ You can also check the traffic on the backends with tcpdump. On the host, you ca
 sudo cat /sys/kernel/debug/tracing/trace_pipe
 ```
 
-## Installations steps for x86_64 Ubuntu 22.04
+## Installations steps for Ubuntu 22.04 (AMD64)
 TODO
 
