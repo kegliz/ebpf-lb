@@ -11,7 +11,6 @@ Setup guides:
 - [Installations steps for Ubuntu 22.04 (AMD64)](#installations-steps-for-ubuntu-2204-amd64)
 
 
-
 ## Installations steps for Mac with Apple Silicon chip
 ### Initial setup
 Install VMware Fusion on your M1 Mac. You can download it from [VMware Fusion](https://www.vmware.com/products/fusion/fusion-evaluation.html).
@@ -69,7 +68,7 @@ tcpdump -i eth0
 Open a different terminal for the client and start its container:
 ```bash
 docker run --rm -it -h client --name client --env TERM=xterm-color ubuntu:jammy
-apt update && sudo apt upgrade 
+apt update && apt upgrade 
 apt install curl
 ```
 
@@ -113,5 +112,10 @@ sudo cat /sys/kernel/debug/tracing/trace_pipe
 ```
 
 ## Installations steps for Ubuntu 22.04 (AMD64)
-TODO
+
+The only difference from the ARM-based installation is that there is no need to create a soft link to `/usr/include/$(shell uname -m)-linux-gnu`. Instead, simply install the `gcc-multilib` package:
+```bash
+sudo apt install gcc-multilib
+```
+
 
